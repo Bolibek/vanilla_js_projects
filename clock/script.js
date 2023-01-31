@@ -1,3 +1,16 @@
+const div = document.createElement("div");
+div.classList.add("clock")
+div.innerHTML = `
+  <div class="clock-face">
+    <div class="hand hour-hand"></div>
+    <div class="hand min-hand"></div>
+    <div class="hand second-hand"></div>
+    <div class="hand center-hand"></div>
+  </div>
+`;
+
+document.body.append(div);
+
 const hourShaft = document.querySelector(".hour-hand");
 const minShaft = document.querySelector(".min-hand");
 const secondShaft = document.querySelector(".second-hand");
@@ -9,11 +22,10 @@ const setCurrentTime = () => {
 		hour = now.getHours() * 30 + 90 + min / 60;
 	hourShaft.style.transform = `rotate(${hour}deg)`;
 	minShaft.style.transform = `rotate(${min}deg)`;
-  secondShaft.style.transationTimingFunction = 'cubic-bezier(0.1, 2.7, 0.58, 1)'
 	secondShaft.style.transform = `rotate(${second}deg)`;
 };
 
-setCurrentTime()
+setCurrentTime();
 
 setInterval(setCurrentTime, 1000);
 
