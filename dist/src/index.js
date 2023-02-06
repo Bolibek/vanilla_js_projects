@@ -1,5 +1,5 @@
 var root = document.querySelector("#root");
-var navList = ["alphabet", "/pages/flex_panel", "clock"];
+var navList = ["alphabet", "/pages/flex_panel", "/pages/clock"];
 var navbar = document.createElement("div");
 var homeNav = document.createElement("a");
 homeNav.textContent = "Home";
@@ -11,8 +11,9 @@ navbar.append(homeNav);
 var navs = document.createElement("div");
 navList.map(function (navLink) {
     var nav = document.createElement("a");
-    nav.href = "/dist/".concat(navLink, ".html");
-    nav.textContent = navLink.lastIndexOf("/") ? navLink.slice(navLink.lastIndexOf("/")) : navLink;
+    nav.href = "/dist".concat(navLink, ".html");
+    var link = navLink.lastIndexOf("/") ? navLink.slice(navLink.lastIndexOf("/") + 1) : navLink;
+    nav.textContent = link[0].toUpperCase() + link.slice(1);
     nav.style.textDecoration = "none";
     nav.style.margin = "0 10px";
     nav.style.color = "white";
