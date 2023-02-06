@@ -3,13 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Alphabet</title>
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="icon" href="https://fav.farm/👓" />
 </head>
 
 <body>
-
+  <div class="navbar">
+    <a class="navbar-brand" href="/dist">Home</a>
+    <div class="navbar-route">
+      <a href="/dist/alphabet.html">Alphabet</a>
+      <a href="/dist/clock.html">Clocks</a>
+    </div>
+  </div>
 
   <div class="keys">
     <div data-key="KeyA" class="key">
@@ -51,7 +57,9 @@
   <audio data-key="KeyK" src="sounds/alphasounds-k.mp3"></audio>
   <audio data-key="KeyL" src="sounds/alphasounds-l.mp3"></audio>
 
-  <script src="script.js">
+  <script src="./src/projects/alphabet/script.js">
+  </script>
+  <!-- <script src="bundle.js"> -->
   </script>
 
 
