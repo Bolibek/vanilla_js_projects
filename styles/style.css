@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	background-color: black;
+	color: #999595
+}
+.navbar{
+	width: 100%;
+	background: #003513;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+}
