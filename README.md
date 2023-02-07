@@ -1,1 +1,1 @@
-# Vanilla.js Projects
+# Vanilla.js and .ts Projects
