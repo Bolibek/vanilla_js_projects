@@ -1,9 +1,9 @@
 const root = document.querySelector("#root");
-const navList: string[] = ["alphabet", "/pages/flex_panel", "/pages/clock"];
+const navList: string[] = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search"];
 const navbar: HTMLElement = document.createElement("div");
 const homeNav: HTMLAnchorElement = document.createElement("a");
 homeNav.textContent = "Home";
-homeNav.href = "/dist";
+homeNav.href = "/dist/";
 homeNav.style.textDecoration = "none";
 homeNav.style.marginLeft = "50px";
 homeNav.style.color = "white";

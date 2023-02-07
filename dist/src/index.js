@@ -1,9 +1,9 @@
 var root = document.querySelector("#root");
-var navList = ["alphabet", "/pages/flex_panel", "/pages/clock"];
+var navList = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search"];
 var navbar = document.createElement("div");
 var homeNav = document.createElement("a");
 homeNav.textContent = "Home";
-homeNav.href = "/dist";
+homeNav.href = "/dist/";
 homeNav.style.textDecoration = "none";
 homeNav.style.marginLeft = "50px";
 homeNav.style.color = "white";
