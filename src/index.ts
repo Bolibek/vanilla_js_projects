@@ -1,5 +1,5 @@
 const root = document.querySelector("#root");
-const navList: string[] = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search"];
+const navList: string[] = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search", "/pages/canvas"];
 const navbar: HTMLElement = document.createElement("div");
 const homeNav: HTMLAnchorElement = document.createElement("a");
 homeNav.textContent = "Home";
