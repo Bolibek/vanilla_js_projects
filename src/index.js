@@ -1,5 +1,5 @@
 var root = document.querySelector("#root");
-var navList = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search", "/pages/canvas"];
+var navList = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search"];
 var navbar = document.createElement("div");
 var homeNav = document.createElement("a");
 homeNav.textContent = "Home";
@@ -23,4 +23,3 @@ navs.style.padding = "0 50px";
 navbar.append(navs);
 navbar.classList.add("navbar");
 root.append(navbar);
-//# sourceMappingURL=index.js.map
