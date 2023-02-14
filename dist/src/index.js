@@ -1,5 +1,5 @@
 var root = document.querySelector("#root");
-var navList = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search", "/pages/canvas", "/pages/checkbox", "/pages/video", "/pages/scroll"];
+var navList = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search", "/pages/canvas", "/pages/checkbox", "/pages/video", "/pages/scroll", "/pages/orders"];
 var navbar = document.createElement("div");
 var homeNav = document.createElement("a");
 homeNav.textContent = "Home";
