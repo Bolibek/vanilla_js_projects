@@ -1,5 +1,5 @@
 const root = document.querySelector("#root");
-const navList: string[] = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search", "/pages/canvas", "/pages/checkbox", "/pages/video"];
+const navList: string[] = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search", "/pages/canvas", "/pages/checkbox", "/pages/video", "/pages/scroll"];
 const navbar: HTMLElement = document.createElement("div");
 const homeNav: HTMLAnchorElement = document.createElement("a");
 homeNav.textContent = "Home";
@@ -12,11 +12,11 @@ const navs = document.createElement("div");
 navList.map((navLink: string) => {
 	const nav = document.createElement("a");
 	nav.href = `/dist${navLink}.html`;
-	const link = navLink.lastIndexOf("/")? navLink.slice(navLink.lastIndexOf("/") +1) : navLink;
+	const link = navLink.lastIndexOf("/") ? navLink.slice(navLink.lastIndexOf("/") + 1) : navLink;
 	nav.textContent = link[0].toUpperCase() + link.slice(1)
 	nav.style.textDecoration = "none";
 	nav.style.margin = "0 10px";
-  nav.style.color = "white";
+	nav.style.color = "white";
 	navs.append(nav);
 });
 navs.style.padding = "0 50px";
