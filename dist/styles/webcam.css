@@ -1,0 +1,108 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 10px;
+	background: #ffc600;
+}
+.navbar {
+	width: 100%;
+	background: #003513;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.navbar-brand {
+	margin-left: 50px;
+	color: white;
+	font-size: 32px;
+	text-decoration: none;
+}
+
+.navbar-route {
+	margin-right: 50px;
+}
+
+.navbar-route a {
+	color: white;
+	margin: 0 10px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+.photobooth {
+	background: white;
+	max-width: 150rem;
+  margin: 10rem auto;
+	border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.photo {
+	width: 100%;
+	float: left;
+}
+.shooter{
+	background-color: rgb(86, 91, 255);
+	color: aliceblue;
+	margin: 5px;
+	border: #ffc600 solid 1px;
+}
+
+.player {
+	position: absolute;
+	top: 90px;
+	right: 20px;
+	width: 200px;
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+	padding: 2rem;
+}
+
+.strip img {
+	width: 100px;
+	overflow-x: scroll;
+	padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	background: white;
+}
+
+.strip a:nth-child(5n + 1) img {
+	transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+	transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+	transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+	transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+	transform: rotate(12deg);
+}

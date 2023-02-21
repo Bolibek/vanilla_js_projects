@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Get User Media Code Along!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+  <link rel="stylesheet" href="../styles/webcam.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="navbar-brand" href="/dist">Home</a>
+    <div class="navbar-route">
+      <a href="/dist/pages/alphabet.html">Alphabet</a>
+      <a href="/dist/pages/clock.html">Clocks</a>
+      <a href="/dist/pages/flex_panel.html">Flex_panel</a>
+      <a href="/dist/pages/search.html">Search</a>
+      <a href="/dist/pages/canvas.html">Canvas</a>
+      <a href="/dist/pages/video.html">Video</a>
+      <a href="/dist/pages/scroll.html">Scroll</a>
+      <a href="/dist/pages/orders.html">Orders</a>
+      <a href="/dist/pages/shadow.html">Shadow</a>
+      <a href="/dist/pages/webcam.html">WebCam</a>
+    </div>
+  </div>
+  <div class="photobooth">
+    <div class="controls">
+      <button class="shooter" onClick="takePhoto()">Take Photo</button>
+      <!-- <div class="rgb">
+        <label for="rmin">Red Min:</label>
+        <input type="range" min=0 max=255 name="rmin">
+        <label for="rmax">Red Max:</label>
+        <input type="range" min=0 max=255 name="rmax">
+
+        <br>
+
+        <label for="gmin">Green Min:</label>
+        <input type="range" min=0 max=255 name="gmin">
+        <label for="gmax">Green Max:</label>
+        <input type="range" min=0 max=255 name="gmax">
+
+        <br>
+
+        <label for="bmin">Blue Min:</label>
+        <input type="range" min=0 max=255 name="bmin">
+        <label for="bmax">Blue Max:</label>
+        <input type="range" min=0 max=255 name="bmax">
+      </div> -->
+    </div>
+
+    <canvas class="photo"></canvas>
+    <video class="player"></video>
+    <div class="strip"></div>
+  </div>
+
+  <audio class="snap" src="../sounds/snap.mp3" hidden></audio>
+
+  <script src="../src/projects/webcam/webcam.js"></script>
+
+</body>
+
+</html>

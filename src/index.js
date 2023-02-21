@@ -1,5 +1,17 @@
 var root = document.querySelector("#root");
-var navList = ["/pages/alphabet", "/pages/flex_panel", "/pages/clock", "/pages/search"];
+var navList = [
+    "/pages/alphabet",
+    "/pages/flex_panel",
+    "/pages/clock",
+    "/pages/search",
+    "/pages/canvas",
+    "/pages/checkbox",
+    "/pages/video",
+    "/pages/scroll",
+    "/pages/orders",
+    "/pages/shadow",
+    "/pages/webcam"
+];
 var navbar = document.createElement("div");
 var homeNav = document.createElement("a");
 homeNav.textContent = "Home";
@@ -12,7 +24,9 @@ var navs = document.createElement("div");
 navList.map(function (navLink) {
     var nav = document.createElement("a");
     nav.href = "/dist".concat(navLink, ".html");
-    var link = navLink.lastIndexOf("/") ? navLink.slice(navLink.lastIndexOf("/") + 1) : navLink;
+    var link = navLink.lastIndexOf("/")
+        ? navLink.slice(navLink.lastIndexOf("/") + 1)
+        : navLink;
     nav.textContent = link[0].toUpperCase() + link.slice(1);
     nav.style.textDecoration = "none";
     nav.style.margin = "0 10px";
