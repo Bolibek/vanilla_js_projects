@@ -4,14 +4,15 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "webpack --config webpack.config.js --watch"
+		"build": "webpack --config webpack.config.js --watch",
+		"start": "browser-sync start --server --files \"*.css, *.html, *.js\""
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Bolibek/vanilla_js_projects.git"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Bolibek",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/Bolibek/vanilla_js_projects/issues"
@@ -19,6 +20,7 @@
 	"homepage": "https://github.com/Bolibek/vanilla_js_projects#readme",
 	"devDependencies": {
 		"@types/lodash": "^4.14.191",
+		"browser-sync": "^2.27.11",
 		"ts-loader": "^9.4.2",
 		"typescript": "^4.9.4",
 		"webpack": "^5.75.0",
