@@ -15,7 +15,7 @@ body {
 	align-items: center;
 }
 
-.navbar{
+.navbar {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -28,24 +28,22 @@ body {
 }
 
 .navbar-brand {
-  margin-left: 50px;
-  color: white;
-  font-size: 32px;
-  text-decoration: none;
-
+	margin-left: 50px;
+	color: white;
+	font-size: 32px;
+	text-decoration: none;
 }
 
 .navbar-route {
-  margin-right: 50px;
+	margin-right: 50px;
 }
 
 .navbar-route a {
-  color: white;
-  margin: 0 10px;
-    font-size: 25px;
-text-decoration: none;
+	color: white;
+	margin: 0 10px;
+	font-size: 25px;
+	text-decoration: none;
 }
-
 
 .clock {
 	width: 30rem;
@@ -74,8 +72,6 @@ text-decoration: none;
 	border-top-left-radius: 50%;
 	border-bottom-left-radius: 50%;
 	top: 50%;
-	
-	
 }
 
 .hour-hand {
@@ -100,8 +96,8 @@ text-decoration: none;
 	height: 3px;
 	transform-origin: 100%;
 	background: #cd0041;
-  /* transition: all 0.05s; */
-  /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+	/* transition: all 0.05s; */
+	/* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
 }
 .center-hand {
 	transform-origin: 100%;
