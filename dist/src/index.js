@@ -10,7 +10,8 @@ var navList = [
     "/pages/scroll",
     "/pages/orders",
     "/pages/shadow",
-    "/pages/webcam"
+    "/pages/webcam",
+    "/pages/speech"
 ];
 var navbar = document.createElement("div");
 var homeNav = document.createElement("a");

@@ -10,7 +10,8 @@ const navList: string[] = [
 	"/pages/scroll",
 	"/pages/orders",
 	"/pages/shadow",
-	"/pages/webcam"
+	"/pages/webcam",
+	"/pages/speech"
 ];
 const navbar: HTMLElement = document.createElement("div");
 const homeNav: HTMLAnchorElement = document.createElement("a");
