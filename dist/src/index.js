@@ -11,7 +11,8 @@ var navList = [
     "/pages/orders",
     "/pages/shadow",
     "/pages/webcam",
-    "/pages/speech"
+    "/pages/speech",
+    "/pages/follow_mouth"
 ];
 var navbar = document.createElement("div");
 var homeNav = document.createElement("a");
